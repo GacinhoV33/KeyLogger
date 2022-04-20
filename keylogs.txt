@@ -1,0 +1,107 @@
+2022-04-20 23:42:46,396: Key.alt_l
+2022-04-20 23:42:46,909: Key.alt_l
+2022-04-20 23:42:46,940: Key.alt_l
+2022-04-20 23:42:46,972: Key.alt_l
+2022-04-20 23:42:47,003: Key.alt_l
+2022-04-20 23:42:47,033: Key.alt_l
+2022-04-20 23:42:47,065: Key.alt_l
+2022-04-20 23:42:47,084: Key.tab
+2022-04-20 23:42:47,648: Key.tab
+2022-04-20 23:42:47,888: Key.tab
+2022-04-20 23:42:52,513: 'f'
+2022-04-20 23:42:52,579: 'a'
+2022-04-20 23:42:52,620: 's'
+2022-04-20 23:42:52,699: 'f'
+2022-04-20 23:42:52,833: 'a'
+2022-04-20 23:42:53,236: 's'
+2022-04-20 23:42:53,296: 'a'
+2022-04-20 23:42:54,209: 'f'
+2022-04-20 23:42:54,339: 'a'
+2022-04-20 23:42:54,341: 's'
+2022-04-20 23:42:54,508: 'f'
+2022-04-20 23:42:54,720: Key.space
+2022-04-20 23:42:55,204: Key.space
+2022-04-20 23:43:39,063: Key.space
+2022-04-20 23:43:40,972: Key.backspace
+2022-04-20 23:43:42,204: 'd'
+2022-04-20 23:43:42,335: 's'
+2022-04-20 23:43:43,772: 'a'
+2022-04-20 23:43:43,827: 'd'
+2022-04-20 23:43:44,288: 'f'
+2022-04-20 23:43:45,000: 'q'
+2022-04-20 23:43:45,111: 'w'
+2022-04-20 23:43:45,528: 'e'
+2022-04-20 23:43:45,671: 'w'
+2022-04-20 23:43:47,656: 'f'
+2022-04-20 23:45:59,322: 'f'
+2022-04-20 23:45:59,516: 's'
+2022-04-20 23:45:59,532: 'a'
+2022-04-20 23:45:59,820: 'f'
+2022-04-20 23:46:18,193: 'd'
+2022-04-20 23:46:18,281: 'a'
+2022-04-20 23:46:18,288: 's'
+2022-04-20 23:46:18,482: 'd'
+2022-04-20 23:46:18,992: 'a'
+2022-04-20 23:46:19,068: 'd'
+2022-04-20 23:46:19,304: 'a'
+2022-04-20 23:46:20,256: Key.alt_l
+2022-04-20 23:46:20,386: Key.tab
+2022-04-20 23:46:20,768: Key.alt_l
+2022-04-20 23:46:20,804: Key.tab
+2022-04-20 23:46:21,272: Key.alt_l
+2022-04-20 23:46:21,308: Key.tab
+2022-04-20 23:46:27,189: Key.alt_l
+2022-04-20 23:46:27,237: Key.tab
+2022-04-20 23:46:27,980: Key.alt_l
+2022-04-20 23:46:28,013: Key.tab
+2022-04-20 23:46:28,193: Key.tab
+2022-04-20 23:46:42,636: Key.right
+2022-04-20 23:46:44,412: Key.right
+2022-04-20 23:46:44,840: Key.right
+2022-04-20 23:46:45,184: Key.right
+2022-04-20 23:46:45,412: Key.right
+2022-04-20 23:46:46,504: Key.left
+2022-04-20 23:46:53,312: Key.right
+2022-04-20 23:46:53,672: Key.right
+2022-04-20 23:46:53,888: Key.right
+2022-04-20 23:47:15,652: Key.space
+2022-04-20 23:47:16,192: Key.space
+2022-04-20 23:48:32,628: Key.ctrl_l
+2022-04-20 23:48:32,630: Key.alt_gr
+2022-04-20 23:48:32,696: Key.ctrl_r
+2022-04-20 23:48:32,792: Key.delete
+2022-04-20 23:52:49,309: Key.space
+2022-04-20 23:52:50,797: Key.space
+2022-04-20 23:53:04,873: Key.space
+2022-04-20 23:55:08,945: Key.space
+2022-04-20 23:55:55,913: Unhandled exception in listener callback
+Traceback (most recent call last):
+  File "C:\Users\gacek\AppData\Roaming\Python\Python37\site-packages\pynput\_util\win32.py", line 386, in _handler
+    converted = self._convert(code, msg, lpdata)
+  File "C:\Users\gacek\AppData\Roaming\Python\Python37\site-packages\pynput\_util\win32.py", line 401, in _convert
+    raise NotImplementedError()
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gacek\AppData\Roaming\Python\Python37\site-packages\pynput\_util\__init__.py", line 228, in inner
+    return f(self, *args, **kwargs)
+  File "C:\Users\gacek\AppData\Roaming\Python\Python37\site-packages\pynput\_util\win32.py", line 390, in _handler
+    self._handle(code, msg, lpdata)
+  File "C:\Users\gacek\AppData\Roaming\Python\Python37\site-packages\pynput\mouse\_win32.py", line 212, in _handle
+    self.on_click(data.pt.x, data.pt.y, button, pressed)
+  File "C:\Users\gacek\AppData\Roaming\Python\Python37\site-packages\pynput\_util\__init__.py", line 144, in inner
+    if f(*args) is False:
+TypeError: mouse_press() takes 1 positional argument but 4 were given
+2022-04-20 23:57:24,036: Key.space
+2022-04-20 23:57:25,197: Key.ctrl_l
+2022-04-20 23:57:25,258: '\x1a'
+2022-04-20 23:59:28,701: Key.space
+2022-04-20 23:59:29,769: Key.space
+2022-04-20 23:59:30,465: 'a'
+2022-04-20 23:59:30,465: Key.space
+2022-04-20 23:59:30,466: 'd'
+2022-04-20 23:59:30,485: 's'
+2022-04-20 23:59:33,982: Key.backspace
+2022-04-20 23:59:34,569: Key.backspace
